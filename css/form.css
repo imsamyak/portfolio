@@ -1,0 +1,116 @@
+#contactMe{
+    width:100%;
+    max-width: 1024px;
+    margin: 40px auto;
+    background-color: rgb(228, 228, 228);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#contactMe>h2{
+    font-weight: 800;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin:20px 0;
+}
+
+#contactMe>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contactAvatarContainer>img{
+    width: 240px
+}
+
+#contactForm{
+    width: 350px;
+    background-color: rgb(232, 232, 232);
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.contactForm_inputGroup{
+    width: 100%;
+    padding: 5px 0;
+}
+
+.contactForm_inputGroup>label{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 3px;
+}
+
+.contactForm_inputGroup input{
+    height: 35px;
+    width:100%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    margin: 3px 0;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.contactForm_inputGroup input:focus{
+    outline: none;
+}
+
+.contactForm_inputGroup textarea{
+    height: 80px;
+    width:100%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    margin: 3px 0;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.contactForm_inputGroup textarea:focus{
+    outline: none;
+}
+
+#contactForm>input[type="submit"]{
+    padding: 5px 12px;
+    background-color: black;
+    color:white;
+    border: none;
+    font-size: 18px;
+    float: right;
+    border:2px solid black;
+    transition: all 200ms;
+    font-weight: 600;
+}
+
+#contactForm>input[type="submit"]:hover{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
+
+#contactAvatarCloseEye{
+    display: none;
+}
+
+
+@media (max-width:665px){
+    #contactAvatarContainer{
+        display: none;
+    }
+
+    #contactForm{
+        width: 100%;
+        max-width: 600px;
+    }
+}

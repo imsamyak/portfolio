@@ -1,0 +1,37 @@
+#socialContainer{
+    padding: 10px 0
+}
+
+#social{
+    list-style-type: none;
+    text-align: center;
+    margin:0;
+    padding:0;
+}
+
+#social li{
+    display: inline-block;
+    background-color:black;
+    margin: 0 7px;
+    border-radius: 4px;
+    transition: transform 200ms
+}
+
+.fa{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    font-size:22px;
+    padding:6px;
+    margin:0;
+    width:24px;
+}
+.fa:hover,
+.fa:visited,
+.fa:active{
+    color:white;
+}
+
+#social li:hover{
+    transform: translateY(-10%)
+}

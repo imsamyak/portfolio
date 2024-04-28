@@ -1,0 +1,99 @@
+#projects{
+    width:100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+#projects>h2{
+    text-align: center;
+    font-weight: 800;
+    font-size: 28px;
+    margin:20px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#projects>section{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+
+.project{
+    width:400px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project>div{
+    position:absolute;
+    top: calc(100% - 30px);
+    bottom: 0; 
+    background-color: rgba(245, 245, 245);
+    width:100%;
+    height: calc(100% - 40px);
+    transition: top 1s ease-in-out;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.project:hover{
+    cursor: pointer;
+}
+
+.project:hover div{
+    top: 60px;
+}
+
+.project>div>h2{
+    background-color: yellow;
+    color:rgb(1, 1, 32);
+    margin:0;
+    padding: 0 20px;
+    height:30px;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project>div>p{
+    padding: 5px 20px;
+    font-size:16px;
+    font-weight: bold;
+}
+
+.project>img{
+    height: 100%;
+}
+
+@media (max-width:870px){
+    .project{
+        width: 320px;
+        height:200px;
+    }
+}
+
+@media (max-width:710px){
+    .project{
+        width: 280px;
+        height:175px;
+    }
+}
+
+@media (max-width:630px){
+    .project{
+        width: 400px;
+        height:250px;
+    }
+}
+
+@media (max-width:470px){
+    .project{
+        width: 320px;
+        height:200px;
+    }
+}
