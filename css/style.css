@@ -365,6 +365,23 @@ img {
     text-decoration-color: var(--ink);
 }
 
+.contact__phone {
+    display: block;
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    text-decoration: none;
+}
+
+.contact__phone:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
 .contact__links {
     display: flex;
     flex-wrap: wrap;
