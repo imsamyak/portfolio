@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samyak Jain, Backend Engineer</title>
     <meta name="description" content="Samyak Jain is a software engineer who builds event-driven backends and serverless infrastructure on AWS with Node.js and TypeScript.">
-    <meta name="theme-color" content="#F3F5F8" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#0D141D" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#F6F7F9" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0E141C" media="(prefers-color-scheme: dark)">
     <meta property="og:title" content="Samyak Jain, Backend Engineer">
     <meta property="og:description" content="Event-driven backends and serverless infrastructure on AWS. Node.js, TypeScript, Vue and Nuxt.">
     <meta property="og:type" content="website">
@@ -23,7 +23,10 @@
 
     <header class="nav">
         <div class="wrap nav__inner">
-            <a class="nav__name" href="#top">Samyak Jain</a>
+            <a class="nav__brand" href="#top" aria-label="Samyak Jain, back to top">
+                <span class="nav__mark" aria-hidden="true">SJ</span>
+                <span class="nav__name">Samyak Jain</span>
+            </a>
             <nav aria-label="Primary">
                 <ul class="nav__links">
                     <li><a href="#about">About</a></li>
@@ -38,133 +41,216 @@
 
     <main id="main">
         <section class="hero" id="top">
-            <div class="wrap hero__grid">
-                <div class="hero__text">
-                    <h1>Samyak Jain</h1>
-                    <p class="hero__lead">Backend engineer building event-driven systems on AWS.</p>
-                    <p class="hero__body">I design the APIs, queues and serverless infrastructure behind K–12 EdTech platforms
-                        that serve 40,000+ users. I work mostly in Node.js and TypeScript, and I'm comfortable on the
-                        Vue and Nuxt front end too.</p>
-                    <div class="hero__actions">
-                        <a class="btn btn--primary" href="https://drive.google.com/file/d/1jQMdw0ZxtB2Wu1sI5x51EDb38zmPQm5e/view?usp=sharing" target="_blank" rel="noopener">Download resume</a>
-                        <a class="btn" href="mailto:imsamyak18@gmail.com">Email me</a>
-                    </div>
+            <div class="wrap">
+                <p class="hero__status">Software Engineer at Compro Technologies</p>
+                <h1>Samyak Jain</h1>
+                <p class="hero__lead">Backend engineer building event-driven systems on AWS.</p>
+                <p class="hero__body">I design the APIs, queues and serverless infrastructure behind K–12 EdTech platforms.
+                    I work mostly in Node.js and TypeScript, and I'm comfortable on the Vue and Nuxt front end too.</p>
+                <div class="hero__actions">
+                    <a class="btn btn--primary" href="https://drive.google.com/file/d/1jQMdw0ZxtB2Wu1sI5x51EDb38zmPQm5e/view?usp=sharing" target="_blank" rel="noopener">Download resume</a>
+                    <a class="btn" href="#contact">Get in touch</a>
                 </div>
-            </div>
-        </section>
 
-        <section class="section" id="about">
-            <div class="wrap section__grid">
-                <h2>About</h2>
-                <div class="about">
-                    <div class="about__text">
-                        <p>I'm a software engineer at Compro Technologies. I build the backend of a multi-tenant K–12
-                            learning platform: the APIs, the event-driven services and the AWS infrastructure underneath
-                            them.</p>
-                        <p>I care about systems that stay understandable as they grow, so I lean on clear service
-                            boundaries, validated inputs and infrastructure kept in code. I have about two years of
-                            professional experience and a B.Tech in Computer Science and Engineering.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="experience">
-            <div class="wrap section__grid">
-                <h2>Experience</h2>
-                <div class="roles">
-                    <article class="role">
-                        <header class="role__head">
-                            <div>
-                                <h3>Software Engineer</h3>
-                                <p class="role__org">Compro Technologies, K–12 LMS</p>
-                            </div>
-                            <time class="role__dates">Jul 2026 – Present</time>
-                        </header>
-                        <ul>
-                            <li>Own the Roster and Calendar APIs of a multi-tenant K–12 learning platform built on the OneRoster standard.</li>
-                            <li>Built the Ed-Fi calendar service and an audit trail service on RabbitMQ.</li>
-                            <li>Work with GraphQL on Hasura and define the infrastructure with AWS CDK.</li>
-                        </ul>
-                    </article>
-
-                    <article class="role">
-                        <header class="role__head">
-                            <div>
-                                <h3>Associate Software Engineer</h3>
-                                <p class="role__org">Compro Technologies, The Map Academy</p>
-                            </div>
-                            <time class="role__dates">Jan 2025 – Jun 2026</time>
-                        </header>
-                        <ul>
-                            <li>Migrated the front end to Nuxt with server-side rendering and built the Vue 3 attendance view.</li>
-                            <li>Built reusable Lit web components shared across screens.</li>
-                            <li>Developed Express APIs with Zod validation and Redis, secured with SSO, OAuth2 and JWT.</li>
-                            <li>Worked on an event-driven transcript platform.</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="projects">
-            <div class="wrap section__grid">
-                <h2>Projects</h2>
-                <div class="roles">
-                    <article class="role">
-                        <header class="role__head">
-                            <div>
-                                <h3>Linkora</h3>
-                                <p class="role__org">Scalable URL shortener</p>
-                            </div>
-                        </header>
-                        <ul>
-                            <li>Nuxt 4 and Vue 3 front end with server-side rendering.</li>
-                            <li>Express 5 and TypeScript REST API.</li>
-                            <li>Single-table DynamoDB design, with TTL to expire links automatically.</li>
-                            <li>Two-availability-zone infrastructure defined in AWS CDK.</li>
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="skills">
-            <div class="wrap section__grid">
-                <h2>Skills</h2>
-                <dl class="skills">
+                <dl class="stats">
                     <div>
-                        <dt>Backend</dt>
-                        <dd>Node.js, TypeScript, Express, NestJS, Java, REST, GraphQL, Microservices</dd>
+                        <dt>Professional experience</dt>
+                        <dd>2 years</dd>
                     </div>
                     <div>
-                        <dt>Cloud and infrastructure</dt>
-                        <dd>AWS (Lambda, SQS, DynamoDB, CloudWatch), AWS CDK, Docker, DevOps</dd>
+                        <dt>Users on the EdTech platforms</dt>
+                        <dd>40,000+</dd>
                     </div>
                     <div>
-                        <dt>Data and messaging</dt>
-                        <dd>PostgreSQL, DynamoDB, Redis, RabbitMQ, SQL</dd>
-                    </div>
-                    <div>
-                        <dt>Front end</dt>
-                        <dd>Vue.js, Nuxt, Tailwind CSS, JavaScript, HTML, CSS</dd>
-                    </div>
-                    <div>
-                        <dt>Tooling</dt>
-                        <dd>Git, GitHub, Postman, SonarQube</dd>
+                        <dt>Backend focus</dt>
+                        <dd>Serverless on AWS</dd>
                     </div>
                 </dl>
             </div>
         </section>
 
+        <section class="section" id="about">
+            <div class="wrap">
+                <header class="section__head">
+                    <h2>About</h2>
+                </header>
+                <div class="about">
+                    <p>I'm a software engineer at Compro Technologies. I build the backend of a multi-tenant K–12
+                        learning platform: the APIs, the event-driven services and the AWS infrastructure underneath
+                        them.</p>
+                    <p>I care about systems that stay understandable as they grow, so I lean on clear service
+                        boundaries, validated inputs and infrastructure kept in code. I have about two years of
+                        professional experience and a B.Tech in Computer Science and Engineering.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="wrap">
+                <header class="section__head">
+                    <h2>Experience</h2>
+                    <p>Compro Technologies, since January 2025.</p>
+                </header>
+                <ol class="timeline">
+                    <li>
+                        <article class="card">
+                            <header class="card__head">
+                                <div>
+                                    <h3>Software Engineer</h3>
+                                    <p class="card__sub">K–12 LMS</p>
+                                </div>
+                                <time>Jul 2026 – Present</time>
+                            </header>
+                            <ul class="card__list">
+                                <li>Own the Roster and Calendar APIs of a multi-tenant K–12 learning platform built on the OneRoster standard.</li>
+                                <li>Built the Ed-Fi calendar service and an audit trail service on RabbitMQ.</li>
+                                <li>Work with GraphQL on Hasura and define the infrastructure with AWS CDK.</li>
+                            </ul>
+                            <ul class="chips" aria-label="Technologies">
+                                <li>AWS CDK</li>
+                                <li>GraphQL</li>
+                                <li>Hasura</li>
+                                <li>RabbitMQ</li>
+                                <li>OneRoster</li>
+                                <li>Ed-Fi</li>
+                            </ul>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card">
+                            <header class="card__head">
+                                <div>
+                                    <h3>Associate Software Engineer</h3>
+                                    <p class="card__sub">The Map Academy</p>
+                                </div>
+                                <time>Jan 2025 – Jun 2026</time>
+                            </header>
+                            <ul class="card__list">
+                                <li>Migrated the front end to Nuxt with server-side rendering and built the Vue 3 attendance view.</li>
+                                <li>Built reusable Lit web components shared across screens.</li>
+                                <li>Developed Express APIs with Zod validation and Redis, secured with SSO, OAuth2 and JWT.</li>
+                                <li>Worked on an event-driven transcript platform.</li>
+                            </ul>
+                            <ul class="chips" aria-label="Technologies">
+                                <li>Nuxt</li>
+                                <li>Vue 3</li>
+                                <li>Lit</li>
+                                <li>Express</li>
+                                <li>Zod</li>
+                                <li>Redis</li>
+                                <li>OAuth2</li>
+                                <li>JWT</li>
+                            </ul>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="wrap">
+                <header class="section__head">
+                    <h2>Projects</h2>
+                </header>
+                <article class="card">
+                    <header class="card__head">
+                        <div>
+                            <h3>Linkora</h3>
+                            <p class="card__sub">Scalable URL shortener</p>
+                        </div>
+                    </header>
+                    <ul class="card__list">
+                        <li>Nuxt 4 and Vue 3 front end with server-side rendering.</li>
+                        <li>Express 5 and TypeScript REST API.</li>
+                        <li>Single-table DynamoDB design, with TTL to expire links automatically.</li>
+                        <li>Two-availability-zone infrastructure defined in AWS CDK.</li>
+                    </ul>
+                    <ul class="chips" aria-label="Technologies">
+                        <li>Nuxt 4</li>
+                        <li>Vue 3</li>
+                        <li>Express 5</li>
+                        <li>TypeScript</li>
+                        <li>DynamoDB</li>
+                        <li>AWS CDK</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="wrap">
+                <header class="section__head">
+                    <h2>Skills</h2>
+                </header>
+                <div class="skills">
+                    <section class="card">
+                        <h3>Backend</h3>
+                        <ul class="chips">
+                            <li>Node.js</li>
+                            <li>TypeScript</li>
+                            <li>Express</li>
+                            <li>NestJS</li>
+                            <li>Java</li>
+                            <li>REST</li>
+                            <li>GraphQL</li>
+                            <li>Microservices</li>
+                        </ul>
+                    </section>
+                    <section class="card">
+                        <h3>Cloud and infrastructure</h3>
+                        <ul class="chips">
+                            <li>AWS Lambda</li>
+                            <li>Amazon SQS</li>
+                            <li>CloudWatch</li>
+                            <li>AWS CDK</li>
+                            <li>Docker</li>
+                            <li>DevOps</li>
+                        </ul>
+                    </section>
+                    <section class="card">
+                        <h3>Data and messaging</h3>
+                        <ul class="chips">
+                            <li>PostgreSQL</li>
+                            <li>DynamoDB</li>
+                            <li>Redis</li>
+                            <li>RabbitMQ</li>
+                            <li>SQL</li>
+                        </ul>
+                    </section>
+                    <section class="card">
+                        <h3>Front end</h3>
+                        <ul class="chips">
+                            <li>Vue.js</li>
+                            <li>Nuxt</li>
+                            <li>Tailwind CSS</li>
+                            <li>JavaScript</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </section>
+                    <section class="card">
+                        <h3>Tooling</h3>
+                        <ul class="chips">
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Postman</li>
+                            <li>SonarQube</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
         <section class="section" id="contact">
-            <div class="wrap section__grid">
-                <h2>Contact</h2>
-                <div class="contact">
-                    <p>Email is the fastest way to reach me.</p>
-                    <a class="contact__mail" href="mailto:imsamyak18@gmail.com">imsamyak18@gmail.com</a>
-                    <a class="contact__phone" href="tel:+918766342062">+91 87663 42062</a>
-                    <ul class="contact__links">
+            <div class="wrap">
+                <div class="cta">
+                    <h2>Get in touch</h2>
+                    <p>Email is the fastest way to reach me. You can also call or message me on the links below.</p>
+                    <div class="cta__actions">
+                        <a class="btn btn--light" href="mailto:imsamyak18@gmail.com">imsamyak18@gmail.com</a>
+                        <a class="btn btn--ghost" href="tel:+918766342062">+91 87663 42062</a>
+                    </div>
+                    <ul class="cta__links">
                         <li><a href="https://www.linkedin.com/in/imsamyakjain/" target="_blank" rel="noopener">LinkedIn</a></li>
                         <li><a href="https://github.com/imsamyak" target="_blank" rel="noopener">GitHub</a></li>
                         <li><a href="https://t.me/imsamyak18/" target="_blank" rel="noopener">Telegram</a></li>
