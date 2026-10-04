@@ -4,250 +4,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samyak Jain, Backend Engineer</title>
+    <meta name="description" content="Samyak Jain is a software engineer who builds event-driven backends and serverless infrastructure on AWS with Node.js and TypeScript.">
+    <meta name="theme-color" content="#F3F5F8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0D141D" media="(prefers-color-scheme: dark)">
+    <meta property="og:title" content="Samyak Jain, Backend Engineer">
+    <meta property="og:description" content="Event-driven backends and serverless infrastructure on AWS. Node.js, TypeScript, Vue and Nuxt.">
+    <meta property="og:type" content="website">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <title>Samyak Jain</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/banner.css">
-    <link rel="stylesheet" href="./css/social.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/skills.css">
-    <link rel="stylesheet" href="./css/projects.css">
-    <link rel="stylesheet" href="./css/form.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <header>
-        <div>
-            <section>
-                <img src="./images/logo.png" />
-
-                <ul id="nav">
-                    <li><a href="#aboutTag">About</a></li>
-                    <li><a href="#skillsTag">Skills</a></li>
-                    <li><a href="#projectsTag">Projects</a></li>
-                    <li><a href="#contactTag">Contact</a></li>
+    <header class="nav">
+        <div class="wrap nav__inner">
+            <a class="nav__name" href="#top">Samyak Jain</a>
+            <nav aria-label="Primary">
+                <ul class="nav__links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </section>
-
-            <div id="banner">
-                <div id="introContainer">
-                    <div id="intro">
-                        <p>Hi There,</p>
-                        <p>I am <span>Samyak Jain</span></p>
-                        <h6>I am into <span id="role">Full-Stack Development</span></h6>
-                    </div>
-                </div>
-
-                <div id="avatarContainer">
-                    <img src="./images/avatar.png" />
-                </div>
-            </div>
-
-            <div id="socialContainer">
-                <ul id="social">
-                    <li><a href="https://github.com/imsamyak" class="fa fa-github" target="_blank"></a></li>
-                    <li><a href="https://www.linkedin.com/in/imsamyakjain/" class="fa fa-linkedin" target="_blank"></a></li>
-                    <li><a href="mailto:imsamyak18@gmail.com" class="fa fa-envelope" target="_blank"></a></li>
-                    <li><a href="https://t.me/imsamyak18/" class="fa fa-telegram" target="_blank"></a></li>
-                    <li><a href="https://www.instagram.com/__samyakj/" class="fa fa-instagram" target="_blank"></a></li>
-                </ul>
-            </div>
+            </nav>
         </div>
     </header>
 
-    <a id="aboutTag"></a>
-    <div id="about">
-        <h2>About Me</h2>
-        <div>
-            <span id="aboutTextContainer">
-                <h2>About Me</h2>
-                <p>Hey there! Delighted to connect! I'm Samyak Jain, currently navigating my way through the exciting
-                    realms
-                    of full-stack development as a third-year Computer Science and Engineering student.</p>
-                <p>I'm passionate about blending problem-solving with creativity to craft seamless and unforgettable
-                    user
-                    experiences. Eager to embark on an innovative journey together!</p>
-                <a href="https://drive.google.com/file/d/1jQMdw0ZxtB2Wu1sI5x51EDb38zmPQm5e/view?usp=sharing" target="_blank">Get My Resume</a>
-            </span>
+    <main id="main">
+        <section class="hero" id="top">
+            <div class="wrap hero__grid">
+                <div class="hero__text">
+                    <h1>Samyak Jain</h1>
+                    <p class="hero__lead">Backend engineer building event-driven systems on AWS.</p>
+                    <p class="hero__body">I design the APIs, queues and serverless infrastructure behind K–12 EdTech platforms
+                        that serve 40,000+ users. I work mostly in Node.js and TypeScript, and I'm comfortable on the
+                        Vue and Nuxt front end too.</p>
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="https://drive.google.com/file/d/1jQMdw0ZxtB2Wu1sI5x51EDb38zmPQm5e/view?usp=sharing" target="_blank" rel="noopener">Download resume</a>
+                        <a class="btn" href="mailto:imsamyak18@gmail.com">Email me</a>
+                    </div>
+                </div>
 
-            <img src="./images/mypic.jpg" alt="samyak's picture" />
-        </div>
-    </div>
-
-
-    <a id="skillsTag"></a>
-    <div id="skills">
-        <h2>Skills & Abilities</h2>
-        <section id="skillBlocksContainer">
-            <div class="programming">
-                <img src="./images/skills/cpp.png" alt="cpp">
-                <span>C++</span>
-            </div>
-            <div class="programming">
-                <img src="./images/skills/java.png" alt="java">
-                <span>JAVA</span>
-            </div>
-            <div class="programming">
-                <img src="./images/skills/python.png" alt="python">
-                <span>Python</span>
-            </div>
-            <div class="frontend">
-                <img src="./images/skills/react.png" alt="reactJs">
-                <span>ReactJS</span>
-            </div>
-            <div class="frontend">
-                <img src="./images/skills/redux.png" alt="redux">
-                <span>Redux</span>
-            </div>
-            <div class="backend">
-                <img src="./images/skills/node.png" alt="nodeJS">
-                <span>NodeJS</span>
-            </div>
-            <div class="backend">
-                <img src="./images/skills/express.png" alt="expressJS">
-                <span>ExpressJS</span>
-            </div>
-            <div class="database">
-                <img src="./images/skills/mysql.png" alt="mySQL">
-                <span>MySQL</span>
-            </div>
-            <div class="database">
-                <img src="./images/skills/mongo.png" alt="mongoDB">
-                <span>MongoDB</span>
-            </div>
-            <div class="database">
-                <img src="./images/skills/firebase.png" alt="firebase">
-                <span>Firebase</span>
-            </div>
-            <div class="basicWeb">
-                <img src="./images/skills/html.png" alt="html5">
-                <span>HTML5</span>
-            </div>
-            <div class="basicWeb">
-                <img src="./images/skills/css.png" alt="css">
-                <span>CSS</span>
-            </div>
-            <div class="basicWeb">
-                <img src="./images/skills/tailwind.png" alt="tailwind css">
-                <span>Tailwind</span>
-            </div>
-            <div class="basicWeb">
-                <img src="./images/skills/js.png" alt="javascript">
-                <span>JavaScript</span>
-            </div>
-            <div class="basicWeb">
-                <img src="./images/skills/jquery.png" alt="jquery">
-                <span>JQuery</span>
+                <figure class="trace-panel">
+                    <div class="trace-panel__head">
+                        <figcaption>How a request moves through the services I build</figcaption>
+                        <button class="trace-panel__replay" type="button" id="replay" aria-label="Replay the request animation">Replay</button>
+                    </div>
+                    <ol class="trace" id="trace">
+                        <li style="--i:0">
+                            <strong>Client</strong>
+                            <span>Sends a request over HTTPS</span>
+                        </li>
+                        <li style="--i:1">
+                            <strong>API</strong>
+                            <span>Authenticates and validates the input</span>
+                        </li>
+                        <li style="--i:2">
+                            <strong>Queue</strong>
+                            <span>Buffers the work so spikes don't drop requests</span>
+                        </li>
+                        <li style="--i:3">
+                            <strong>Worker</strong>
+                            <span>Processes each event independently</span>
+                        </li>
+                        <li style="--i:4">
+                            <strong>Database</strong>
+                            <span>Stores the result and answers later reads</span>
+                        </li>
+                    </ol>
+                </figure>
             </div>
         </section>
-    </div>
 
-    <a id="projectsTag"></a>
-    <div id="projects">
-        <h2>My Projects</h2>
-        <section>
-            <div class="project" onclick="showProjectDetails(event)">
-                <img src="./images/projects/blogSite.png" alt="blogSite">
-                <div>
-                    <h2>BlogSite MERN</h2>
-                    <p>The MERN stack-based blog site facilitates user authentication, enabling users to create, edit,
-                        and delete blog posts. </p>
-                </div>
-            </div>
-            <div class="project" onclick="showProjectDetails(event)">
-                <img src="./images/projects/shoppingSite.png" alt="shoppingSite">
-                <div>
-                    <h2>Shopping Site</h2>
-                    <p>The React-based shopping site offers a user-friendly interface for browsing, adding, and
-                        purchasing products without the need for additional frameworks.</p>
-                </div>
-            </div>
-            <div class="project" onclick="showProjectDetails(event)">
-                <img src="./images/projects/weatherApp.png" alt="weatherApp">
-                <div>
-                    <h2>Weather App</h2>
-                    <p>The JavaScript, HTML, and CSS weather app provides real-time weather information, displaying
-                        forecasts and current conditions with intuitive design and user interaction.</p>
-                </div>
-            </div>
-            <div class="project" onclick="showProjectDetails(event)">
-                <img src="./images/projects/todolist.png" alt="todolist">
-                <div>
-                    <h2>Todo List</h2>
-                    <p>The React-based to-do list app offers an intuitive interface for managing tasks, allowing users
-                        to add, edit, and delete items with ease.</p>
+        <section class="section" id="about">
+            <div class="wrap section__grid">
+                <h2>About</h2>
+                <div class="about">
+                    <div class="about__text">
+                        <p>I'm a software engineer at Compro Technologies. I build the backend of a multi-tenant K–12
+                            learning platform: the APIs, the event-driven services and the AWS infrastructure underneath
+                            them.</p>
+                        <p>I care about systems that stay understandable as they grow, so I lean on clear service
+                            boundaries, validated inputs and infrastructure kept in code. I have about two years of
+                            professional experience and a B.Tech in Computer Science and Engineering.</p>
+                    </div>
+                    <img class="about__photo" src="./images/mypic.jpg" width="640" height="640" alt="Portrait of Samyak Jain" loading="lazy">
                 </div>
             </div>
         </section>
-    </div>
 
-    <a id="contactTag"></a>
-    <div id="contactMe">
-        <h2>Get In Touch</h2>
+        <section class="section" id="experience">
+            <div class="wrap section__grid">
+                <h2>Experience</h2>
+                <div class="roles">
+                    <article class="role">
+                        <header class="role__head">
+                            <div>
+                                <h3>Software Engineer</h3>
+                                <p class="role__org">Compro Technologies, K–12 LMS</p>
+                            </div>
+                            <time class="role__dates">Jul 2026 – Present</time>
+                        </header>
+                        <ul>
+                            <li>Own the Roster and Calendar APIs of a multi-tenant K–12 learning platform built on the OneRoster standard.</li>
+                            <li>Built the Ed-Fi calendar service and an audit trail service on RabbitMQ.</li>
+                            <li>Work with GraphQL on Hasura and define the infrastructure with AWS CDK.</li>
+                        </ul>
+                    </article>
 
-        <div>
-            <div id="contactAvatarContainer">
-                <img src="./images/avatar2.png" alt="avatar" id="contactAvatarOpenEye">
-                <img src="./images/avatar.png" alt="avatar" id="contactAvatarCloseEye">
+                    <article class="role">
+                        <header class="role__head">
+                            <div>
+                                <h3>Associate Software Engineer</h3>
+                                <p class="role__org">Compro Technologies, The Map Academy</p>
+                            </div>
+                            <time class="role__dates">Jan 2025 – Jun 2026</time>
+                        </header>
+                        <ul>
+                            <li>Migrated the front end to Nuxt with server-side rendering and built the Vue 3 attendance view.</li>
+                            <li>Built reusable Lit web components shared across screens.</li>
+                            <li>Developed Express APIs with Zod validation and Redis, secured with SSO, OAuth2 and JWT.</li>
+                            <li>Worked on an event-driven transcript platform.</li>
+                        </ul>
+                    </article>
+                </div>
             </div>
-            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="f0dff3c2-931c-4d0f-92c6-5a1002ea2e87" />
-                <input type="hidden" name="subject" value="New Contact" />
-                <input type="hidden" name="from_name" value="My Portfolio" />
-                <div class="contactForm_inputGroup">
-                    <label for="contactName">Name</label>
-                    <input name="Name" id="contactName" placeholder="Your Name" />
+        </section>
+
+        <section class="section" id="projects">
+            <div class="wrap section__grid">
+                <h2>Projects</h2>
+                <div class="roles">
+                    <article class="role">
+                        <header class="role__head">
+                            <div>
+                                <h3>Linkora</h3>
+                                <p class="role__org">Scalable URL shortener</p>
+                            </div>
+                        </header>
+                        <ul>
+                            <li>Nuxt 4 and Vue 3 front end with server-side rendering.</li>
+                            <li>Express 5 and TypeScript REST API.</li>
+                            <li>Single-table DynamoDB design, with TTL to expire links automatically.</li>
+                            <li>Two-availability-zone infrastructure defined in AWS CDK.</li>
+                        </ul>
+                    </article>
                 </div>
+            </div>
+        </section>
 
-                <div class="contactForm_inputGroup">
-                    <label for="contactEmail">Email</label>
-                    <input type="email" name="Email" id="contactEmail" placeholder="Your Email" />
-                </div>
+        <section class="section" id="skills">
+            <div class="wrap section__grid">
+                <h2>Skills</h2>
+                <dl class="skills">
+                    <div>
+                        <dt>Backend</dt>
+                        <dd>Node.js, TypeScript, Express, NestJS, Java, REST, GraphQL, Microservices</dd>
+                    </div>
+                    <div>
+                        <dt>Cloud and infrastructure</dt>
+                        <dd>AWS (Lambda, SQS, DynamoDB, CloudWatch), AWS CDK, Docker, DevOps</dd>
+                    </div>
+                    <div>
+                        <dt>Data and messaging</dt>
+                        <dd>PostgreSQL, DynamoDB, Redis, RabbitMQ, SQL</dd>
+                    </div>
+                    <div>
+                        <dt>Front end</dt>
+                        <dd>Vue.js, Nuxt, Tailwind CSS, JavaScript, HTML, CSS</dd>
+                    </div>
+                    <div>
+                        <dt>Tooling</dt>
+                        <dd>Git, GitHub, Postman, SonarQube</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
 
-                <div class="contactForm_inputGroup">
-                    <label for="contactPhone">Phone</label>
-                    <input type="tel" name="Phone" id="contactPhone" placeholder="+XX 123 456 7890" />
-                </div>
-
-                <div class="contactForm_inputGroup">
-                    <label for="contactMessage">Message</label>
-                    <textarea name="Message" id="contactMessage" rows="2"
-                        placeholder="Enter Your Message Here.."></textarea>
-                </div>
-
-                <input type="submit" value="Submit" />
-            </form>
-        </div>
-    </div>
-
-    <footer>
-        <div>
-            <div id="footerContent">
-
-                <div id="socialContainer">
-                    <ul id="social">
-                        <li><a href="https://github.com/imsamyak" class="fa fa-github" target="_blank"></a></li>
-                        <li><a href="https://www.linkedin.com/in/imsamyakjain/" class="fa fa-linkedin" target="_blank"></a></li>
-                        <li><a href="mailto:imsamyak18@gmail.com" class="fa fa-envelope" target="_blank"></a></li>
-                        <li><a href="https://t.me/imsamyak18/" class="fa fa-telegram" target="_blank"></a></li>
-                        <li><a href="https://www.instagram.com/__samyakj/" class="fa fa-instagram" target="_blank"></a></li>
+        <section class="section" id="contact">
+            <div class="wrap section__grid">
+                <h2>Contact</h2>
+                <div class="contact">
+                    <p>Email is the fastest way to reach me.</p>
+                    <a class="contact__mail" href="mailto:imsamyak18@gmail.com">imsamyak18@gmail.com</a>
+                    <ul class="contact__links">
+                        <li><a href="https://www.linkedin.com/in/imsamyakjain/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://github.com/imsamyak" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://t.me/imsamyak18/" target="_blank" rel="noopener">Telegram</a></li>
                     </ul>
                 </div>
-
-                <div id="contactDetails">
-                    <p>+91 8766342062</p>
-                    <p>imsamyak18@gmail.com</p>
-                </div>
             </div>
-            <h2>Made with <i class="fa fa-heart"></i> By Samyak Jain</h2>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer__inner">
+            <p>© <span id="year">2026</span> Samyak Jain</p>
+            <a href="#top">Back to top</a>
         </div>
     </footer>
-</body>
 
-<script src="./index.js"></script>
+    <script src="./index.js"></script>
+</body>
 
 </html>
