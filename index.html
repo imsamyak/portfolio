@@ -42,7 +42,9 @@
     <main id="main">
         <section class="hero" id="top">
             <div class="wrap">
-                <p class="hero__status">Software Engineer at Compro Technologies</p>
+                <div class="hero__grid">
+                    <div class="hero__text">
+                        <p class="hero__status">Software Engineer at Compro Technologies</p>
                 <h1>Samyak Jain</h1>
                 <p class="hero__lead">Backend engineer building event-driven systems on AWS.</p>
                 <p class="hero__body">I design the APIs, queues and serverless infrastructure behind K–12 EdTech platforms.
@@ -50,6 +52,23 @@
                 <div class="hero__actions">
                     <a class="btn btn--primary" href="https://drive.google.com/file/d/1jQMdw0ZxtB2Wu1sI5x51EDb38zmPQm5e/view?usp=sharing" target="_blank" rel="noopener">Download resume</a>
                     <a class="btn" href="#contact">Get in touch</a>
+                </div>
+                    </div>
+                    <figure class="code" aria-label="Example handler: validate the input, save a record, publish an event">
+                        <div class="code__bar">
+                            <span class="code__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                            <figcaption>enrollments.ts</figcaption>
+                        </div>
+<pre><code><span class="line"><span class="c">// Validate, store, then publish an event</span></span>
+<span class="line"><span class="k">export async function</span> <span class="f">enroll</span>(req, res) {</span>
+<span class="line">  <span class="k">const</span> data = schema.<span class="f">parse</span>(req.body);</span>
+<span class="line"></span>
+<span class="line">  <span class="k">const</span> record = <span class="k">await</span> roster.<span class="f">save</span>(data);</span>
+<span class="line">  <span class="k">await</span> queue.<span class="f">publish</span>(<span class="s">"enrolled"</span>, record);</span>
+<span class="line"></span>
+<span class="line">  res.<span class="f">status</span>(<span class="n">202</span>).<span class="f">json</span>({ id: record.id });</span>
+<span class="line">}</span></code></pre>
+                    </figure>
                 </div>
 
                 <dl class="stats">

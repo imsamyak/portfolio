@@ -273,6 +273,84 @@ a {
     border-color: color-mix(in srgb, var(--accent) 88%, var(--ink));
 }
 
+.hero__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 420px;
+    gap: 48px;
+    align-items: center;
+}
+
+/* Code window */
+.code {
+    margin: 0;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: #0F172A;
+    border: 1px solid #1E293B;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.18);
+    color: #E2E8F0;
+}
+
+.code__bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #1E293B;
+    background: #131D33;
+}
+
+.code__dots {
+    display: flex;
+    gap: 6px;
+}
+
+.code__dots i {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #334155;
+}
+
+.code figcaption {
+    font-size: 0.75rem;
+    color: #94A3B8;
+}
+
+.code pre {
+    margin: 0;
+    padding: 18px 0;
+    overflow-x: auto;
+    font-family: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+    font-size: 0.78125rem;
+    line-height: 1.75;
+    counter-reset: line;
+    white-space: normal;
+}
+
+.code .line {
+    display: block;
+    min-height: 1.75em;
+    padding-right: 20px;
+    white-space: pre;
+}
+
+.code .line::before {
+    counter-increment: line;
+    content: counter(line);
+    display: inline-block;
+    width: 44px;
+    padding-right: 16px;
+    text-align: right;
+    color: #475569;
+}
+
+.code .c { color: #64748B; }
+.code .k { color: #C4B5FD; }
+.code .f { color: #7DD3FC; }
+.code .s { color: #86EFAC; }
+.code .n { color: #FCA5A5; }
+
 .stats {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -561,6 +639,13 @@ a {
 }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+    .hero__grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 36px;
+    }
+}
+
 @media (max-width: 760px) {
     .hero {
         padding-block: 48px 48px;
@@ -594,6 +679,15 @@ a {
 @media (max-width: 640px) {
     :root {
         --gutter: 20px;
+    }
+
+    .code pre {
+        font-size: 0.6875rem;
+    }
+
+    .code .line::before {
+        width: 30px;
+        padding-right: 12px;
     }
 
     .nav__brand {
