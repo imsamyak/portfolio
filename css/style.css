@@ -1,5 +1,6 @@
 /* ---------- Tokens ---------- */
 :root {
+    color-scheme: light;
     --paper: #F5F7FA;
     --surface: #FFFFFF;
     --ink: #0F172A;
@@ -21,8 +22,27 @@
     --radius: 14px;
 }
 
+/* Dark theme: explicit choice wins, otherwise follow the device */
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #0B1119;
+    --surface: #121A25;
+    --ink: #E8EDF4;
+    --muted: #98A4B5;
+    --line: #212C3B;
+    --accent: #7C97FF;
+    --accent-ink: #0B1119;
+    --accent-soft: #19243D;
+    --glow: rgba(124, 151, 255, 0.14);
+    --cta-bg: #141E33;
+    --cta-line: #25324D;
+    --shadow: none;
+    --shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
 @media (prefers-color-scheme: dark) {
-    :root {
+    :root:not([data-theme="light"]) {
+        color-scheme: dark;
         --paper: #0B1119;
         --surface: #121A25;
         --ink: #E8EDF4;
@@ -184,6 +204,41 @@ a {
 .nav__links a.is-active {
     color: var(--ink);
     background: var(--accent-soft);
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theme-toggle {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: var(--surface);
+    color: var(--muted);
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.theme-toggle:hover {
+    color: var(--ink);
+    border-color: var(--muted);
+}
+
+html:not([data-theme]) .theme-toggle {
+    display: none;
+}
+
+/* show the icon for the theme you would switch to */
+[data-theme="dark"] .icon-moon,
+[data-theme="light"] .icon-sun {
+    display: none;
 }
 
 /* ---------- Hero ---------- */
@@ -704,7 +759,11 @@ a {
     }
 
     .nav__links a {
-        padding: 6px 8px;
+        padding: 6px 6px;
+    }
+
+    .nav__links {
+        gap: 0;
     }
 
     .card {
